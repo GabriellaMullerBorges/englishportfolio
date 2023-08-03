@@ -1,0 +1,135 @@
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(34, 34, 34) !important;
+}
+
+.navbar-brand {
+   text-justify: center;
+   text-shadow: 0 0 3px rgb(255, 196, 0);
+  font-size: 1.5rem ;
+ 
+}
+
+
+#navbarNav {
+    width: 100%;
+    justify-self: end;
+}
+
+
+.navbar-toggler{
+    outline: none;
+    border: none;
+  }
+
+.nav-link:hover{
+  color: rgb(255, 196, 0) !important;
+  }
+
+  .nav-link {
+    font-size: 18px !important ;
+  }
+  
+.navbar-toggler:active {
+    outline: none;
+    border: none;
+  }
+
+  .navbar-toggler:not(.collapsed) {
+    outline: none !important;
+    border: none !important;
+  }
+
+  .navbar-toggler{
+    width:fit-content;
+    justify-self: flex-end;
+  }
+
+@media (max-width:768px) {
+    .navbar .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #343a40;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+        justify-content: flex-end;
+        height: 0;
+      }
+    
+      .navbar .navbar-collapse.show {
+        opacity: 1;
+        visibility: visible !important;
+        transform: translateY(0);
+        height: 100vh; 
+      }
+    
+      .navbar .navbar-toggler {
+        order: 2;
+        margin-left: auto;
+      }
+    
+      .navbar .navbar-brand {
+        order: 1;
+      }
+    
+      .navbar .navbar-nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        flex-grow: 1; /* Adicionado */
+      }
+    
+      .navbar .navbar-nav .nav-link {
+        margin-bottom: 10px;
+        flex-grow: 1; /* Adicionado */
+      }
+    
+      #navbarNav {
+        width: 100%;
+      }
+
+      .navbar-toggler, .collapse, .navbar-collapse, .show{
+        outline: none;
+        border: none;
+      }
+
+      :is(.navbar-toggler, .collapse, .navbar-collapse, .show) :active {
+        outline: none;
+        border: none;
+      }
+
+      .navbar-toggler:not(.collapsed) {
+        outline: none !important;
+        border: none !important;
+      }
+
+   
+}
+
+@media (min-width:481px) {
+ .nav-link, .nav-item {
+    font-size: 22px !important;
+    justify-content: space-between !important;
+  }
+
+  #navbarNav , .navbar-nav {
+    justify-content: flex-end !important;   
+  }
+  
+}

@@ -1,0 +1,87 @@
+.sobre {
+	background-color: rgb(46, 46, 46);
+    padding: 2rem
+}
+
+.sobre-conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+.sobre-texto {
+    margin-left: 1em;
+}
+
+.cidade, .transicao, .viagem, .diferencial {
+    display: flex;
+}
+
+.icone-cidade , .icone-transicao, .icone-viagem, .icone-ideia{
+    height: 20px;
+    width: 20px;
+   background-position: center;
+   background-repeat: no-repeat; 
+
+}
+
+.icone-cidade {
+   background-image: url(/icones/location.svg); 
+}
+
+.icone-transicao{
+    background-image: url(/icones/briefcase.svg); 
+}
+
+.icone-viagem{
+    background-image: url(/icones/love.svg); 
+}
+
+.icone-ideia {
+    background-image: url(/icones/ideia.svg); 
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+}
+.diferencial, .viagem {
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+.saibamais {
+    color:rgb(255, 196, 0);
+    font-size: 22px;
+    
+}
+
+.saibamais:hover {
+    color:rgb(155, 155, 154);
+    font-weight: bold;
+}
+
+
+@media (min-width:1024px) {
+	.sobre-conteudo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        font-size: 23px;
+    }
+	
+    .saibamais {
+        margin-bottom: 1rem;
+    }
+
+    .sobre-texto {
+        margin-left: 0;
+    }
+
+    .icone-cidade , .icone-transicao, .icone-viagem, .icone-ideia{
+        height: 30px;
+        width: 30px;
+
+    }
+}
